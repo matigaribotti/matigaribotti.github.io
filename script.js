@@ -2,7 +2,7 @@
 // Countdown Timer
 document.addEventListener('DOMContentLoaded', () => {
     const countdownElement = document.getElementById('countdown');
-    const weddingDate = new Date('2025-05-31 16:30:00 GMT-3').getTime();
+    const weddingDate = new Date('31-05-2025 16:30:00 GMT-3').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
