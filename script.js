@@ -2,7 +2,7 @@
 // Countdown Timer
 document.addEventListener('DOMContentLoaded', () => {
     const countdownElement = document.getElementById('countdown');
-    const weddingDate = new Date('[Insert Wedding Date]').getTime();
+    const weddingDate = new Date('2025-05-31 16:30:00 GMT-3').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-            countdownElement.textContent = `Days: ${days}, Hours: ${hours}, Minutes: ${minutes}, Seconds: ${seconds}`;
+            countdownElement.textContent = `Faltan ${days} días, ${hours} horas y ${minutes} minutos para el gran día!`;
         } else {
             countdownElement.textContent = "The big day is here!";
         }
